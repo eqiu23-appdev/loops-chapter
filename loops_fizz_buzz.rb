@@ -4,3 +4,15 @@
 # for multiples of three print "Fizz" instead of the number
 #   for multiples of five print "Buzz" instead of the number
 #   for numbers which are multiples of both three and five print "FizzBuzz"
+
+1.upto(100) do |multiples|
+ if multiples % 3 == 0 && multiples % 5 == 0
+   p "FizzBuzz"
+ elsif multiples % 3 == 0
+   p "Fizz"
+ elsif multiples % 5 == 0
+    p "Buzz"
+ else
+    p multiples
+ end
+end
